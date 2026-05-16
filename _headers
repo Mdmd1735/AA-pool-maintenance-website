@@ -1,15 +1,11 @@
-## HTML — revalidate on every visit
-/*.html
+## HTML — always revalidate
+/*
   Cache-Control: public, max-age=0, must-revalidate
 
-/
-  Cache-Control: public, max-age=0, must-revalidate
-
-## CSS — cache 1 year (filenames are static)
+## CSS & images — cache 1 year (content never changes filename)
 /assets/css/*
   Cache-Control: public, max-age=31536000, immutable
 
-## Images — cache 1 year
 /assets/pictures*
   Cache-Control: public, max-age=31536000, immutable
 
